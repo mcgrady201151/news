@@ -76,10 +76,10 @@ for i in range(NUM):
     t.setDaemon(True)
     t.start()
 
-id = 115
-while id < 200:
+id = 300
+while id < 400:
     yueguang_url = 'http://www.williamlong.info/cat/?page=' + str(id)
-    ithome_url = 'http://it.ithome.com/category/1_' + str(id) + '.html'
+    #ithome_url = 'http://it.ithome.com/category/1_' + str(id) + '.html'
     huxiu_url = 'http://www.huxiu.com/focus/?more=1&page=' + str(id)
     _36kr_url = 'http://www.36kr.com/?page=' + str(id)
     leiphone_url = 'http://www.leiphone.com/page/' + str(id)
@@ -92,7 +92,7 @@ while id < 200:
     q.put(yueguang_url)
     q.put(_36kr_url)
     q.put(leiphone_url)
-    q.put(ithome_url)
+    #q.put(ithome_url)
     q.put(huxiu_url)
     
     id += 1
